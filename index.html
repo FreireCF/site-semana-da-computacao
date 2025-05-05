@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IV SCC-IFMA</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/midia.css">
+    <title>Semana da Computação</title>
 </head>
+
 <body>
     <header>
-            <nav>
-                <ul class="cabecalho__menu">
-                    <h2>IV SCC-IFMA</h2>
-                    <li class="cabecalho__menu__link"><a href="">Home</a></li>
-                    <li class="cabecalho__menu__link"><a href="">Programação</a></li>
-                    <li class="cabecalho__menu__link"><a href="">Palestrantes</a></li>
-                    <li class="cabecalho__menu__link"><a href="">Workshops</a></li>
-                    <li class="cabecalho__menu__link"><a href="">Galeria</a></li>
-                    <li class="cabecalho__menu__link"><a href="">Contato</a></li>
-                    <li class="cabecalho__menu__link"><a href="">Inscrição</a></li>
-                    <li class="cabecalho__menu__link"><a  href="">Inscreva-se</a></li>
+        <div class="top-logo">
+            <a href="#"><h1>V SCC-IFMA</h1></a>
+        </div>
+        <div class="top-menu">
+            <button id="menu-open" onclick="OpenMenu()"><i id="menu-bar" class="bi bi-list"></i></button>
+            
+            <nav class="nav-desktop" id="nav-menu">
+                <button id="menu-close" onclick="CloseMenu()"><i id="menu-bar-close" class="bi bi-x-lg"></i></i></button>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/src/pages/palestras.html">Palestras</a></li>
+                    <li><a href="/src/pages/progamacao.html">Programação</a></li>
+                    <li><a href="/src/pages/workshops.html">Workshops</a></li>
+                    <li><a href="/src/pages/workshops.html">Galeria</a></li>
+                    <li id="iscreva-gradiet" class="top-button"><a href="/src/pages/inscricao.html">Inscreva-se</a></li>
                 </ul>
             </nav>
+        </div>
     </header>
+
     <main>
-        <section class="banner">
-            <h1 class="banner__titulo"><strong>4ª Semana de Ciência</strong><br>da Computação</h1>
-            <p>Junte-se a especialistas e entusiastas para uma semana de descobertas,
-            <br>aprendizado e networking no maior evento de Computação do IFMA Campus Caxias.</p>
-            <a  class="banner__inscrever" href="">Inscreva-se agora</a>
-            <a class="banner__programacao" href="">Ver a programação</a>
+        <section class="text-main">
+            <div class="info-text">
+                <p>12 a 14 de Junho - IFMA campus Caxias</p>
+            </div>
+            <div>
+                <h1>5° Semana de Ciência</h1>
+                <h1 id="text-black">da Computação</h1>
+            </div>
+            <p>Junte-se a especialistas e entusiastas para uma semana de descobertas, aprendizados e networking no maior evento de computação de IFMA campus Caxias.</p>
         </section>
 
-        <section class="informacoes">
-            <div class="card">
-                <img src="image/calendario.png" alt="">
-                <h3>Data</h3>
-                <p>24 a 28 de Outubro</p>
-            </div>
-            <div class="card">
-                <img src="image/local.png" alt="">
-                <h3>Local</h3>
-                <p>IFMA Campus Caxias</p>
-            </div>
-            <div class="card">
-                <img src="image/horario.png" alt="">
-                <h3>Horário</h3>
-                <p>8h às 18h</p>
-            </div>
-
+        <section class="button-main">
+            <button id="iscreva-gradiet"><a href="/src/pages/inscricao.html">Inscreva-se Agora</a></button>
+            <button><a href="">Ver Programação</a></button>
         </section>
-        
 
+        <section class="containers-main">
+            <div class="bloco-info">
+                <i id="date" class="bi bi-calendar"></i>
+                <div class="text-col">
+                    <h1>Data</h1>
+                    <p>12 a 14 de Junho</p>
+                </div>
+            </div>
 
+            <div class="bloco-info">
+                <i id="locate" class="bi bi-geo-alt"></i>
+                <div class="text-col">
+                    <h1>Local</h1>
+                    <p>IFMA - Campus Caxias</p>
+                </div>
+            </div>
 
-
+            <div class="bloco-info">
+                <i id="time" class="bi bi-clock"></i>
+                <div class="text-col">
+                    <h1>Horário</h1>
+                    <p>Das 8:00 ás 18:00</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="/src/scripts/app.js"></script>
 </body>
+
 </html>

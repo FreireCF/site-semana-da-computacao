@@ -1,0 +1,249 @@
+html {
+    font-family: "Mulish", sans-serif;
+    height: 100%;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --white-2: #f8f8f8c9;
+    --white-3: #e5eaf5; 
+    --primary: #0051ff;
+    --primary-light: #548aff;
+    --segudary: #8409bd;
+    --segudary-light: #7434c8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 18px;
+    box-shadow: 0px 1px 20px 0px #00000050;
+    align-items: center;
+    background-color: var(--white);
+    height: 60px;
+}
+
+.top-logo h1 {
+    font-size: 26px;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, var(--primary), var(--segudary));
+}
+
+.top-menu nav ul {
+    display: flex;
+    padding: 2px;
+    gap: 12px;
+}
+
+nav {
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li {
+    position: relative;
+    border-radius: 4px;
+    padding: 6px 0;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--primary-light);
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li a {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #548aff;
+}
+
+.top-button {
+    padding: 6px;
+    &&:hover::after {
+        width: 0%;
+    }
+}
+
+main {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 0;
+    background-color: var(--white-2);
+    background-image: radial-gradient(
+        #c7c7c775 2px,
+        transparent 2px
+    );
+    background-size: 20px 20px;
+    gap: 30px;
+}
+
+.text-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.text-main h1 {
+    font-size: 56px;
+    background-clip: text;
+    font-weight: 700;
+    max-width: 600px;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, var(--primary), var(--primary-light), var(--segudary));
+}
+
+#text-black {
+    -webkit-text-fill-color: #000;
+}
+
+.text-main p {
+    font-size: 24px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.info-text {
+    padding: 6px 12px;
+    border-radius: 12px;
+    background-color: var(--white-3);
+    color: var(--primary-light);
+}
+
+.info-text p {
+    font-size: 20px;
+    font-family: "Mulish", sans-serif;
+}
+
+.button-main {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.button-main button {
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    width: 260px;
+    box-shadow: 0 0 10px 0px;
+}
+
+.button-main button:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px 0px var(--primary-light);
+}
+
+.button-main button a {
+    color: var(--black);
+    font-family: "Mulish", sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#iscreva-gradiet {
+    background-image: linear-gradient(to right, var(--primary-light), var(--segudary));
+}
+
+#iscreva-gradiet a {
+    color: #fff;
+}
+
+.containers-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 2rem;
+}
+
+.bloco-info {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-3);
+    width: 260px;
+    padding: 22px 16px;
+    margin: 8px;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.bloco-info i {
+    font-size: 22px;
+    color: var(--white);
+    padding: 8px;
+    background-color: var(--primary-light);
+    border-radius: 20px;
+}
+
+.text-col h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.text-col p {
+    font-weight: 500;
+    font-family: "Mulish", sans-serif;
+}
+
+.top-menu button {
+    background-color: transparent;
+    border: none;
+}
+
+#menu-open {
+    display: none;
+}
+
+#menu-bar {
+    font-size: 32px;
+    &&:hover {
+        cursor: pointer;
+    }
+}
+
+
+.incricao-title {
+    font-size: 30px;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary);
+}
+
+form label {
+    font-size: 22px;
+}
+
+.form-check-label {
+    font-size: 18px;
+}
